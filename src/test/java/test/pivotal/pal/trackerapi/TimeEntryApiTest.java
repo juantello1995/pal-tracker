@@ -46,7 +46,7 @@ public class TimeEntryApiTest {
 
     @Test
     public void testList() {
-        Long id = createTimeEntry();
+        long id = createTimeEntry();
 
 
         ResponseEntity<String> listResponse = restTemplate.getForEntity("/time-entries", String.class);
